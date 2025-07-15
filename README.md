@@ -10,16 +10,16 @@ we access them by loading the modules:
 module load scientific/q6/23.11
 module load scientific/q6-esguerra/21.09
 
-## EVB reaction profiles##
+## EVB reaction profiles
 
-### System preparation - topology###
+### System preparation - topology
 
-### FEP-file###
+### FEP-file
 
-### Equilibration###
+### Equilibration
 
-### FEP-s###
+### FEP-s
 
-### Calibration - referent reaction###
+### Calibration - referent reaction
 
-### Analysis###
+### Analysis
