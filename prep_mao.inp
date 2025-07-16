@@ -2,10 +2,10 @@ readlib  Qoplsaa_HUGO.lib
 readlib  CHG.lib
 readlib  fac.lib
 readprm  all.prm
-readpdb  mao_chg_ver1.pdb
+readpdb  mao_chg.pdb
 boundary sphere 395:N41 30
 solvate  395:N41 30 1 HOH
-maketop  mao_chgi_1.top
-writetop mao_chg_1.top
-writepdb mao_chg_start_1.pdb y
+maketop  mao_chg.top
+writetop mao_chg.top
+writepdb mao_chg_start.pdb y
 quit
