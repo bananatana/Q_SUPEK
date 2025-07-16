@@ -7,8 +7,8 @@ There are two versions of Q installed on the SUPEK cluster, [Q6](https://github.
 
 we access them by loading the modules:
 
-module load scientific/q6/23.11
-module load scientific/q6-esguerra/21.09
+```module load scientific/q6/23.11```
+```module load scientific/q6-esguerra/21.09```
 
 ## EVB reaction profiles
 
@@ -54,13 +54,31 @@ If you're unfamiliar with force fields, it's strongly recommended to review thei
 
 - `all.prm` – master parameter file
 - `Qoplsaa_HUGO.lib` – standard OPLSAA library for amino acids
-- `lfn.lib` – custom library for lumiflavin (LFN), consistent across MAO A and MAO B systems
+- `lfn.final.lib` – custom library for lumiflavin (LFN), consistent across MAO A and MAO B systems
 
 > ⚠️ **Important:**
 > - All parameters must be combined into a **single `.prm` file**.
 > - If you add a new ligand or amino acid residue, include its parameters in this file.
 > - Atom names must be **unique** within each molecule/residue.
 > - You can include multiple `.lib` files. These act as interpreters, linking atom names in the `.pdb` file to the correct atom types defined in the parameter file.
+
+**Ligand parameterization (OPLS-AA):**
+
+For ligand parameterization under the **OPLS-AA** force field, the recommended tool is **LigParGen**. Parameters can be generated using either:
+
+- The [LigParGen web server](https://zarbi.chem.yale.edu/ligpargen/)
+- The terminal version available on [GitHub](https://github.com/Isra3l/ligpargen) (**recommended**)
+
+---
+
+**Usage on Supek**
+
+On the *Supek* cluster, LigParGen is already installed and can be used as follows:
+
+```module load scientific/pymemdyn  # Load the module that includes LigParGen```
+
+Once the module is loaded, the ligpargen command becomes available in the path and can be used according to standard usage:
+
 
 
 ### FEP-file
