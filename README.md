@@ -7,8 +7,12 @@ There are two versions of Q installed on the SUPEK cluster, [Q6](https://github.
 
 we access them by loading the modules:
 
-```module load scientific/q6/23.11```
-```module load scientific/q6-esguerra/21.09```
+```
+module load scientific/q6/23.11
+```
+```
+module load scientific/q6-esguerra/21.09
+```
 
 ## EVB reaction profiles
 
