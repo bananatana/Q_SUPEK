@@ -85,6 +85,18 @@ Once the module is loaded, the ligpargen command becomes available in the path a
 app ligpargen -h                      # Displays help
 app ligpargen -i CHG.pdb -r CHG -c 0 # Generates parameters for neutral CHG
 ```
+⚠️ Note: Be mindful of the charge assigned to the molecule, as it affects the geometry—even if you plan to recalculate the charges later using a different method.
+
+>**Files and Integration**
+> - LigParGen generates parameter files for several software packages. For use with Q, you’ll need the `.lib` and `.prm` files.
+> - Make sure to merge the `.prm` file into the master parameter file used in your simulation.
+> - Ensure atom names are unique and consistent with those in the `.pdb` file.
+
+>**Charge Considerations**
+> - You may keep the partial charges assigned by LigParGen.
+> - For higher accuracy, charges can be recalculated using Gaussian16 (e.g., RESP method), and updated manually in the .prm file.
+> - If the ligand is treated as fully reactive (i.e., all atoms are Q-atoms), charge groups are not necessary.
+However, for passive ligands, charge groups must be defined in the .lib file. These are sets of adjacent atoms with an integer total charge.
 
 ### FEP-file
 
