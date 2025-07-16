@@ -79,11 +79,16 @@ For ligand parameterization under the **OPLS-AA** force field, the recommended t
 
 On the *Supek* cluster, LigParGen is already installed and can be used as follows:
 
-```module load scientific/pymemdyn  # Load the module that includes LigParGen```
+```
+module load scientific/pymemdyn  # Load the module that includes LigParGen
+```
 
 Once the module is loaded, the ligpargen command becomes available in the path and can be used according to standard usage:
 
-
+```
+app ligpargen -h                      # Displays help
+app ligpargen -i CHG.pdb -r CHG -c 0 # Generates parameters for neutral CHG
+```
 
 ### FEP-file
 
