@@ -23,7 +23,7 @@ In the case of MAO A inhibition by CHG, the proposed mechanism involves a hydrid
 [Int. J. Mol. Sci. (2020)](https://doi.org/10.3390/ijms21176151)
 ... and others :) 
 
-Three distinct systems are modeled to study the reaction environment effects:
+**Three distinct systems are modeled to study the reaction environment effects:**
 
 1. Gas phase:
     Lumiflavin (LFN) + CHG
@@ -36,6 +36,33 @@ In the gas and water phase models, the full FAD cofactor is replaced with lumifl
 
 ### System preparation - topology
 
+### System Preparation
+
+The first step involves generating the system topology and preparing the initial simulation setup, including solvation and definition of the spherical region (if applicable).
+
+Start with a `.pdb` file that contains the appropriate reactants:
+
+- For **gas-phase** and **water-phase** systems: `CHG + LFN`
+- For **enzyme systems**: `enzyme–FAD + CHG`
+
+---
+
+**Force Field Parameters**
+
+This workflow uses the **OPLS-AA** force field.  
+If you're unfamiliar with force fields, it's strongly recommended to review their fundamentals before proceeding.
+
+**Required files:**
+
+- `all.prm` – master parameter file
+- `Qoplsaa_HUGO.lib` – standard OPLSAA library for amino acids
+- `LFN.lib` – custom library for lumiflavin (LFN), consistent across MAO A and MAO B systems
+
+> ⚠️ **Important:**
+> - All parameters must be combined into a **single `.prm` file**.
+> - If you add a new ligand or amino acid residue, include its parameters in this file.
+> - Atom names must be **unique** within each molecule/residue.
+> - You can include multiple `.lib` files. These act as interpreters, linking atom names in the `.pdb` file to the correct atom types defined in the parameter file.
 
 
 ### FEP-file
