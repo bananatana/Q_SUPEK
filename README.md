@@ -18,8 +18,8 @@ It is important to note that the reaction mechanism should be well-establishedâ€
 
 In the case of MAO A inhibition by CHG, the proposed mechanism involves a hydride transfer from the CÎ± atom of the inhibitor to the N5 position of the covalently bound flavin cofactor (FAD). This mechanism is described in detail in the following references:
 
-[Eur. J. Org. Chem. (2011)](https://doi.org/10.1002/ejoc.201100873)
-[ACS Chem. Neurosci. (2019)](https://doi.org/10.1021/acschemneuro.9b00147)
+[Eur. J. Org. Chem. (2011)](https://doi.org/10.1002/ejoc.201100873),
+[ACS Chem. Neurosci. (2019)](https://doi.org/10.1021/acschemneuro.9b00147),
 [Int. J. Mol. Sci. (2020)](https://doi.org/10.3390/ijms21176151)
 ... and others :) 
 
