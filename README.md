@@ -36,8 +36,6 @@ In the gas and water phase models, the full FAD cofactor is replaced with lumifl
 
 ### System preparation - topology
 
-### System Preparation
-
 The first step involves generating the system topology and preparing the initial simulation setup, including solvation and definition of the spherical region (if applicable).
 
 Start with a `.pdb` file that contains the appropriate reactants:
@@ -56,7 +54,7 @@ If you're unfamiliar with force fields, it's strongly recommended to review thei
 
 - `all.prm` – master parameter file
 - `Qoplsaa_HUGO.lib` – standard OPLSAA library for amino acids
-- `LFN.lib` – custom library for lumiflavin (LFN), consistent across MAO A and MAO B systems
+- `lfn.lib` – custom library for lumiflavin (LFN), consistent across MAO A and MAO B systems
 
 > ⚠️ **Important:**
 > - All parameters must be combined into a **single `.prm` file**.
