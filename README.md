@@ -12,7 +12,31 @@ module load scientific/q6-esguerra/21.09
 
 ## EVB reaction profiles
 
+Here I provide an example workflow for studying the MAO A inhibition reaction with the inhibitor chlorgyline (CHG). While the focus here is on this specific system, the general approach can be adapted to other systems with appropriate modifications.
+
+It is important to note that the reaction mechanism should be well-established—either experimentally or computationally—before proceeding. A clear understanding of the involved reactants and products is essential.
+
+In the case of MAO A inhibition by CHG, the proposed mechanism involves a hydride transfer from the Cα atom of the inhibitor to the N5 position of the covalently bound flavin cofactor (FAD). This mechanism is described in detail in the following references:
+
+[Eur. J. Org. Chem. (2011)](https://doi.org/10.1002/ejoc.201100873)
+[ACS Chem. Neurosci. (2019)](https://doi.org/10.1021/acschemneuro.9b00147)
+[Int. J. Mol. Sci. (2020)](https://doi.org/10.3390/ijms21176151)
+... and others :) 
+
+Three distinct systems are modeled to study the reaction environment effects:
+
+1. Gas phase:
+    Lumiflavin (LFN) + CHG
+2. Aqueous phase:
+    LFN + CHG + explicit water sphere
+3. Enzymatic environment:
+    MAO A enzyme (covalently bound FAD cofactor) + CHG + explicit water sphere
+
+In the gas and water phase models, the full FAD cofactor is replaced with lumiflavin (LFN) to simplify the system while retaining the essential reactive moiety.
+
 ### System preparation - topology
+
+
 
 ### FEP-file
 
