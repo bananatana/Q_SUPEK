@@ -114,7 +114,7 @@ However, for passive ligands, charge groups must be defined in the .lib file. Th
 >/lustre/home/ttandari/MAO_A_2025/CHG_RESP/chg.gesp
 >
 >```
-> Resulting `.gesp` file goes through antechamber
+> Resulting `.gesp` file goes through antechamber:
 >
 >```
 >antechamber -fi gesp -i CHG.gesp -fo ac -o CHG.ac -nc 0
@@ -138,7 +138,9 @@ The most common issues arise from duplicate parameters—these can typically be 
 
 ### FEP-file
 
+At this stage, we need a `.fep` file that specifies which atoms—and associated interactions such as bonds, angles, and dihedrals—undergo changes during the reaction (i.e., the FEP calculation). This information is provided to qtools via a `.qmap` file. You can find examples for both the enzyme and the water/gas phase in the repository.
 
+In addition to the standard `.lib` and `.prm` files used for building the topology, corresponding `.lib` and `.prm` files are also required for the product molecules.
 
 ### Equilibration
 
