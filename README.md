@@ -1,4 +1,4 @@
-# Q_SUPEK
+# Q_SUPEK 
 Instructions for using Q6 and related tools on the [SUPEK cluster](https://www.srce.unizg.hr/napredno-racunanje). Here I will provide running scripts and examples. 
 
 **General informations:**
@@ -98,7 +98,23 @@ app ligpargen -i CHG.pdb -r CHG -c 0 # Generates parameters for neutral CHG
 > - If the ligand is treated as fully reactive (i.e., all atoms are Q-atoms), charge groups are not necessary.
 However, for passive ligands, charge groups must be defined in the .lib file. These are sets of adjacent atoms with an integer total charge.
 
+**Final topology bulding**
+
+Once all the necessary files are gathered, we proceed to build the topology. You can find input examples in the repository. In my case, the center of the sphere was defined as the N5 atom of FAD (or LFN). Both the sphere center and its radius can be adjusted in the `.inp` file.
+
+To generate the topology, use the following command:
+
+```
+Qprep6 < qprep.inp > qprep.out
+```
+
+Always check the qprep.out file to ensure everything completed successfully, and examine the newly created `.pdb` file.
+
+The most common issues arise from duplicate parameters—these can typically be removed, especially if they don’t belong to your custom residue (or any amino acid).
+
 ### FEP-file
+
+
 
 ### Equilibration
 
