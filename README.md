@@ -98,6 +98,29 @@ app ligpargen -i CHG.pdb -r CHG -c 0 # Generates parameters for neutral CHG
 > - If the ligand is treated as fully reactive (i.e., all atoms are Q-atoms), charge groups are not necessary.
 However, for passive ligands, charge groups must be defined in the .lib file. These are sets of adjacent atoms with an integer total charge.
 
+>** RESP Charge Calculations**
+> Input for Gaussian16 calculation looks like this: 
+>```
+>chk=chg
+>#HF/6-31G* SCF=tight Test Pop=MK iop(6/33=2) iop(6/42=6) opt
+># iop(6/50=1)
+>
+>CHG
+>
+>0 1
+> C                   -0.95700000   -4.37800000    2.30700000
+> 
+>/lustre/home/ttandari/MAO_A_2025/CHG_RESP/chg.gesp
+>
+>```
+> Resulting `.gesp` file goes through antechamber
+>
+>```
+>antechamber -fi gesp -i CHG.gesp -fo ac -o CHG.ac -nc 0
+>```
+>Resulting `.ac` contains RESP charges. You can use it in `.lib` file. 
+>Be mindful about netto charge (-nc). 
+
 **Final topology bulding**
 
 Once all the necessary files are gathered, we proceed to build the topology. You can find input examples in the repository. In my case, the center of the sphere was defined as the N5 atom of FAD (or LFN). Both the sphere center and its radius can be adjusted in the `.inp` file.
