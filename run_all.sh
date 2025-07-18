@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the script to copy
-SCRIPT_NAME="q_run_feps.sh"
+SCRIPT_NAME="q_run_feps.pbs"
 
 # Make sure the script exists
 if [ ! -f "$SCRIPT_NAME" ]; then
