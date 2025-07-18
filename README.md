@@ -154,6 +154,14 @@ The resulting .fep file will include data on the parameter changes, but certain 
 
 ### Equilibration
 
+Now that everything is prepared, we can proceed with running the simulation. Before starting the FEP calculations, the system must be equilibrated. The equilibration approach varies depending on whether the simulation is in the gas phase, water phase, or enzyme environment:
+
+> - Gas phase: Typically, a single relaxation step is sufficient.
+> - Water phase and enzyme: Equilibration is performed in multiple steps (I used 10), during which the restraints are gradually released, and the system is heated. The specific restraints applied will, of course, depend on the system.
+> - Water and gas phase: Stronger restraints are often required because the system is not exactly at a minimum, whereas in the enzyme environment, the surroundings are already "adapted" to accommodate the ligand.
+I have included my input files and initial .pdb structures in the repository for reference. You can also generate similar inputs automatically using the q_genrelax.py script (which I highly recommend!) in combination with the provided [templates](https://github.com/mpurg/qtools/tree/master/template_examples).
+
+
 ### FEP-s
 
 ### Calibration - referent reaction
