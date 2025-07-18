@@ -13,6 +13,7 @@ module load scientific/q6/23.11
 ```
 module load scientific/q6-esguerra/21.09
 ```
+Additionally, Q6 should be installed locally, along with the utilities required for the specific type of calculation we are performing.
 
 ## EVB reaction profiles
 
@@ -114,7 +115,7 @@ However, for passive ligands, charge groups must be defined in the .lib file. Th
 >/lustre/home/ttandari/MAO_A_2025/CHG_RESP/chg.gesp
 >
 >```
-> Resulting `.gesp` file goes through antechamber:
+> Resulting `.gesp` file goes through antechamber (which you install as a part of Ambertools package):
 >
 >```
 >antechamber -fi gesp -i CHG.gesp -fo ac -o CHG.ac -nc 0
@@ -136,11 +137,20 @@ Always check the qprep.out file to ensure everything completed successfully, and
 
 The most common issues arise from duplicate parameters—these can typically be removed, especially if they don’t belong to your custom residue (or any amino acid).
 
-### FEP-file
+### FEP file
 
 At this stage, we need a `.fep` file that specifies which atoms—and associated interactions such as bonds, angles, and dihedrals—undergo changes during the reaction (i.e., the FEP calculation). This information is provided to qtools via a `.qmap` file. You can find examples for both the enzyme and the water/gas phase in the repository.
 
-In addition to the standard `.lib` and `.prm` files used for building the topology, corresponding `.lib` and `.prm` files are also required for the product molecules.
+Here, we use [qtools](https://github.com/mpurg/qtools/tree/master). You can install in locally. Some computer architectures may not work well with this installation and instead require a Python 2 environment. This can be easily addressed by using a virtual environment with pyenv. For example, I had to set this up on macOS, but there should be no issues on Linux.
+
+In addition to the standard `.lib` and `.prm` files used for building the topology, corresponding `.lib` and `.prm` files are also required for the product molecules. In the repository, you can find an example illustrating the structure of a .qmap file and the resulting .fep file, though these will naturally vary depending on the specific case.
+
+Locally, where **qtools** are installed, we run the following command:
+
+```
+q_makefep_old.py -s  your_start.pdb -m example.qmap -p *.prm -l *lib -o example.fep --index
+```
+The resulting .fep file will include data on the parameter changes, but certain elements will need to be edited manually (these are marked as <FIX> in the .fep file). This primarily concerns bonds that break during the reaction. For such bonds, the Morse potential is used instead of the standard harmonic potential to allow bond breaking. In my .fep file, you can see the adjustments I made for the FAD (LFN) + CHG system. For other cases, you should consult the relevant literature.
 
 ### Equilibration
 
