@@ -168,7 +168,7 @@ Once the equilibration is complete, it is important to visualize the resulting t
 The script for running the job on Supek is available in the repository. Simply adapt it as needed and launch the run with:
 
 ```
-qsub run_eq_q.sh
+qsub Q6_supek_eq.pbs
 ```
 
 ### FEP-s
