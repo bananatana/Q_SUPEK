@@ -161,6 +161,15 @@ Now that everything is prepared, we can proceed with running the simulation. Bef
 > - Water and gas phase: Stronger restraints are often required because the system is not exactly at a minimum, whereas in the enzyme environment, the surroundings are already "adapted" to accommodate the ligand.
 I have included my input files and initial .pdb structures in the repository for reference. You can also generate similar inputs automatically using the q_genrelax.py script (which I highly recommend!) in combination with the provided [templates](https://github.com/mpurg/qtools/tree/master/template_examples).
 
+The logic behind applying restraints is as follows: we start by restraining the entire system and then gradually loosen these restraints, eventually applying them only to the heavy atoms, and so on. A useful trick to prevent the system from falling apart is to apply gentle restraints between the reactive atoms.
+
+Once the equilibration is complete, it is important to visualize the resulting trajectories in PyMOL or VMD to verify that the simulation behaved as expected and that our parameters are appropriate (in particular, to check whether the system remained intact).
+
+The script for running the job on Supek is available in the repository. Simply adapt it as needed and launch the run with:
+
+```
+qsub run_eq_q.sh
+```
 
 ### FEP-s
 
