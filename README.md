@@ -173,6 +173,23 @@ qsub Q6_supek_eq.pbs
 
 ### FEP-s
 
+We have now reached the stage of performing the FEP simulation. FEP is typically carried out in multiple replicates to ensure sufficient sampling of the conformational space.
+
+The first step is to generate the necessary input files. This is done using the **q_genfeps.py** script (part of qtools) as follows:
+
+```
+q_genfeps.py genfeps_template.proc last_eq.inp inp
+```
+
+Here:
+- `genfeps_template.proc` is a template that defines the FEP procedure.
+- `last_eq.inp` is the input file from the final step of equilibration.
+
+Running this command will create 10 replicas, each with 51 lambda steps. These parameters can, of course, be adjusted as needed. In fact, anything within the template—such as the number of steps, time step, or restraints—can be customized. How much is required depends on both the specific system and your goals.
+
+I’ve included my template file in the repository so you can see how it works, including how the restraints are defined within it.
+
+
 ### Calibration - referent reaction
 
 ### Analysis
