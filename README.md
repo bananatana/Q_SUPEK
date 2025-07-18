@@ -189,6 +189,16 @@ Running this command will create 10 replicas, each with 51 lambda steps. These p
 
 I’ve included my template file in the repository so you can see how it works, including how the restraints are defined within it.
 
+In short, the script will generate as many folders as the number of replicas you choose, each containing all the necessary inputs (including the two pre-FEP equilibration inputs and the FEP inputs).
+
+To avoid running the simulations one folder at a time, I’ve provided two helper scripts`run_all.sh` and `q_run_feps.pbs` — which should be placed in the main folder containing all replicas.
+You can then execute:
+
+```
+bash run_all.sh
+```
+
+This script will copy `q_run_feps.sh` into each replica folder and execute it automatically.
 
 ### Calibration - referent reaction
 
