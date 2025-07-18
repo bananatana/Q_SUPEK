@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#PBS -q cpu
+#PBS -l select=32:mem=500mb
+#PBS -N qdyn_batch
+#PBS -o qdyn_batch.out
+#PBS -e qdyn_batch.err
+
+cd $PBS_O_WORKDIR
+
+module load scientific/q6/23.11
+
+for step in $(seq -w 1 10); do
+    echo "Running step $step..."
+    mpirun -hostfile $PBS_NODEFILE Qdyn6p ${step}.inp > ${step}.log
+done
+
