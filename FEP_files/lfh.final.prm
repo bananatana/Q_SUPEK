@@ -1,0 +1,386 @@
+
+! lfh. vdw parameter------------------------------------------------------------------------------------
+[atom_types]
+lfh.N1         971.75    971.75     28.31    687.13     20.02   14.01   !OK  
+lfh.C2        1802.24   1802.24     34.18   1274.38     24.17   12.01   !OK  
+lfh.O3         616.44    616.44     23.77    435.89     16.81   16.00   !OK  
+lfh.N4         971.75    971.75     28.31    687.13     20.02   14.01   !OK  
+lfh.C5        1039.88   1039.88     24.25    735.31     17.15   12.01   !OK  
+lfh.O6         976.93    976.93     31.26    690.79     22.10   16.00   !OK  
+lfh.C7        1039.88   1039.88     24.25    735.31     17.15   12.01   !OK  
+lfh.N8        1064.97   1064.97     29.63    753.05     20.95   14.01   !OK  
+lfh.C9        1059.13   1059.13     23.67    748.92     16.74   12.01   !OK  
+lfh.C10       1059.13   1059.13     23.67    748.92     16.74   12.01   !OK  
+lfh.C11       1059.13   1059.13     23.67    748.92     16.74   12.01   !OK  
+lfh.C12        944.52    944.52     22.03    667.88     15.58   12.01   !OK  
+lfh.C13       1059.13   1059.13     23.67    748.92     16.74   12.01   !OK  
+lfh.C14        944.52    944.52     22.03    667.88     15.58   12.01   !OK  
+lfh.C15       1059.13   1059.13     23.67    748.92     16.74   12.01   !OK  
+lfh.C16       1059.13   1059.13     23.67    748.92     16.74   12.01   !OK  
+lfh.N17        971.75    971.75     28.31    687.13     20.02   14.01   !OK  
+lfh.C18       1039.88   1039.88     24.25    735.31     17.15   12.01   !OK  
+lfh.C19        944.52    944.52     22.03    667.88     15.58   12.01   !OK  
+lfh.H20          0.00      0.00      0.00      0.00      0.00    1.01   !OK  
+lfh.H21         69.58     69.58      4.91     49.20      3.47    1.01   !OK  
+lfh.H22         84.57     84.57      5.41     59.80      3.83    1.01   !OK  
+lfh.H23         84.57     84.57      5.41     59.80      3.83    1.01   !OK  
+lfh.H24         84.57     84.57      5.41     59.80      3.83    1.01   !OK  
+lfh.H25         84.57     84.57      5.41     59.80      3.83    1.01   !OK  
+lfh.H26         84.57     84.57      5.41     59.80      3.83    1.01   !OK  
+lfh.H27         69.58     69.58      4.91     49.20      3.47    1.01   !OK  
+lfh.H28         59.80     59.80      3.83     42.29      2.71    1.01   !OK  
+lfh.H29         59.80     59.80      3.83     42.29      2.71    1.01   !OK  
+lfh.H30         84.57     84.57      5.41     59.80      3.83    1.01   !OK  
+lfh.H31         59.80     59.80      3.83     42.29      2.71    1.01   !OK  
+lfh.H32          0.00      0.00      0.00      0.00      0.00    1.01   !OK  
+
+! lfh. bond parameter-----------------------------------------------------------------------------------
+[bonds]
+lfh.N1        lfh.C2         914.00   1.358
+lfh.N1        lfh.C18        966.00   1.339
+lfh.C2        lfh.O3        1140.00   1.229
+lfh.C2        lfh.N4         836.00   1.388
+lfh.N4        lfh.C5         896.00   1.365
+lfh.N4        lfh.H20        868.00   1.010
+lfh.C5        lfh.O6         900.00   1.370
+lfh.C5        lfh.C7        1098.00   1.340
+lfh.C7        lfh.N8         962.00   1.340
+lfh.C7        lfh.C18        854.00   1.433
+lfh.N8        lfh.C9         962.00   1.340
+lfh.N8        lfh.H32        868.00   1.010
+lfh.C9        lfh.C10        938.00   1.400
+lfh.C9        lfh.C16        938.00   1.400
+lfh.C10       lfh.C11        938.00   1.400
+lfh.C10       lfh.H21        734.00   1.080
+lfh.C11       lfh.C12        634.00   1.510
+lfh.C11       lfh.C13        938.00   1.400
+lfh.C12       lfh.H22        680.00   1.090
+lfh.C12       lfh.H23        680.00   1.090
+lfh.C12       lfh.H24        680.00   1.090
+lfh.C13       lfh.C14        634.00   1.510
+lfh.C13       lfh.C15        938.00   1.400
+lfh.C14       lfh.H25        680.00   1.090
+lfh.C14       lfh.H26        680.00   1.090
+lfh.C14       lfh.H30        680.00   1.090
+lfh.C15       lfh.C16        938.00   1.400
+lfh.C15       lfh.H27        734.00   1.080
+lfh.C16       lfh.N17        962.00   1.340
+lfh.N17       lfh.C18        962.00   1.340
+lfh.N17       lfh.C19        674.00   1.463
+lfh.C19       lfh.H28        680.00   1.090
+lfh.C19       lfh.H29        680.00   1.090
+lfh.C19       lfh.H31        680.00   1.090
+
+! lfh. angle parameter----------------------------------------------------------------------------------
+[angles]
+lfh.C2        lfh.N1        lfh.C18        140.00   120.500
+lfh.N1        lfh.C2        lfh.O3         160.00   122.500
+lfh.N1        lfh.C2        lfh.N4         140.00   118.600
+lfh.O3        lfh.C2        lfh.N4         160.00   120.600
+lfh.C2        lfh.N4        lfh.C5         140.00   121.600
+lfh.C2        lfh.N4        lfh.H20         70.00   116.800
+lfh.C5        lfh.N4        lfh.H20         70.00   119.200
+lfh.N4        lfh.C5        lfh.O6         160.00   120.600
+lfh.N4        lfh.C5        lfh.C7         140.00   121.200
+lfh.O6        lfh.C5        lfh.C7         140.00   123.000
+lfh.C5        lfh.C7        lfh.N8         140.00   121.200
+lfh.C5        lfh.C7        lfh.C18        170.00   117.000
+lfh.N8        lfh.C7        lfh.C18        140.00   120.100
+lfh.C7        lfh.N8        lfh.C9         100.00   109.500
+lfh.C7        lfh.N8        lfh.H32         70.00   111.000
+lfh.C9        lfh.N8        lfh.H32         70.00   111.000
+lfh.N8        lfh.C9        lfh.C10        140.00   120.100
+lfh.N8        lfh.C9        lfh.C16        140.00   120.100
+lfh.C10       lfh.C9        lfh.C16        126.00   120.000
+lfh.C9        lfh.C10       lfh.C11        126.00   120.000
+lfh.C9        lfh.C10       lfh.H21         70.00   120.000
+lfh.C11       lfh.C10       lfh.H21         70.00   120.000
+lfh.C10       lfh.C11       lfh.C12        140.00   120.000
+lfh.C10       lfh.C11       lfh.C13        126.00   120.000
+lfh.C12       lfh.C11       lfh.C13        140.00   120.000
+lfh.C11       lfh.C12       lfh.H22         70.00   109.500
+lfh.C11       lfh.C12       lfh.H23         70.00   109.500
+lfh.C11       lfh.C12       lfh.H24         70.00   109.500
+lfh.H22       lfh.C12       lfh.H23         66.00   107.800
+lfh.H22       lfh.C12       lfh.H24         66.00   107.800
+lfh.H23       lfh.C12       lfh.H24         66.00   107.800
+lfh.C11       lfh.C13       lfh.C14        140.00   120.000
+lfh.C11       lfh.C13       lfh.C15        126.00   120.000
+lfh.C14       lfh.C13       lfh.C15        140.00   120.000
+lfh.C13       lfh.C14       lfh.H25         70.00   109.500
+lfh.C13       lfh.C14       lfh.H26         70.00   109.500
+lfh.C13       lfh.C14       lfh.H30         70.00   109.500
+lfh.H25       lfh.C14       lfh.H26         66.00   107.800
+lfh.H25       lfh.C14       lfh.H30         66.00   107.800
+lfh.H26       lfh.C14       lfh.H30         66.00   107.800
+lfh.C13       lfh.C15       lfh.C16        126.00   120.000
+lfh.C13       lfh.C15       lfh.H27         70.00   120.000
+lfh.C16       lfh.C15       lfh.H27         70.00   120.000
+lfh.C9        lfh.C16       lfh.C15        126.00   120.000
+lfh.C9        lfh.C16       lfh.N17        140.00   120.100
+lfh.C15       lfh.C16       lfh.N17        140.00   120.100
+lfh.C16       lfh.N17       lfh.C18        100.00   123.200
+lfh.C16       lfh.N17       lfh.C19        100.00   123.200
+lfh.C18       lfh.N17       lfh.C19        100.00   123.200
+lfh.N1        lfh.C18       lfh.C7         140.00   121.500
+lfh.N1        lfh.C18       lfh.N17        140.00   119.300
+lfh.C7        lfh.C18       lfh.N17        140.00   120.100
+lfh.N17       lfh.C19       lfh.H28         70.00   109.500
+lfh.N17       lfh.C19       lfh.H29         70.00   109.500
+lfh.N17       lfh.C19       lfh.H31         70.00   109.500
+lfh.H28       lfh.C19       lfh.H29         66.00   107.800
+lfh.H28       lfh.C19       lfh.H31         66.00   107.800
+lfh.H29       lfh.C19       lfh.H31         66.00   107.800
+
+! lfh. proper parameter---------------------------------------------------------------------------------
+[torsions]
+lfh.C18       lfh.N1        lfh.C2        lfh.O3          0.000   -1.000     0.000   1.000
+lfh.C18       lfh.N1        lfh.C2        lfh.O3          3.045   -2.000   180.000   1.000
+lfh.C18       lfh.N1        lfh.C2        lfh.O3          0.000    3.000     0.000   1.000
+lfh.C18       lfh.N1        lfh.C2        lfh.N4          0.000   -1.000     0.000   1.000
+lfh.C18       lfh.N1        lfh.C2        lfh.N4          5.000   -2.000   180.000   1.000
+lfh.C18       lfh.N1        lfh.C2        lfh.N4          0.000    3.000     0.000   1.000
+lfh.C2        lfh.N1        lfh.C18       lfh.C7          0.000   -1.000     0.000   1.000
+lfh.C2        lfh.N1        lfh.C18       lfh.C7          3.625   -2.000   180.000   1.000
+lfh.C2        lfh.N1        lfh.C18       lfh.C7          0.000    3.000     0.000   1.000
+lfh.C2        lfh.N1        lfh.C18       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.C2        lfh.N1        lfh.C18       lfh.N17         3.625   -2.000   180.000   1.000
+lfh.C2        lfh.N1        lfh.C18       lfh.N17         0.000    3.000     0.000   1.000
+lfh.N1        lfh.C2        lfh.N4        lfh.C5          0.000   -1.000     0.000   1.000
+lfh.N1        lfh.C2        lfh.N4        lfh.C5          2.325   -2.000   180.000   1.000
+lfh.N1        lfh.C2        lfh.N4        lfh.C5          0.000    3.000     0.000   1.000
+lfh.N1        lfh.C2        lfh.N4        lfh.H20         0.000   -1.000     0.000   1.000
+lfh.N1        lfh.C2        lfh.N4        lfh.H20         2.325   -2.000   180.000   1.000
+lfh.N1        lfh.C2        lfh.N4        lfh.H20         0.000    3.000     0.000   1.000
+lfh.O3        lfh.C2        lfh.N4        lfh.C5          0.000   -1.000     0.000   1.000
+lfh.O3        lfh.C2        lfh.N4        lfh.C5          3.045   -2.000   180.000   1.000
+lfh.O3        lfh.C2        lfh.N4        lfh.C5          0.000    3.000     0.000   1.000
+lfh.O3        lfh.C2        lfh.N4        lfh.H20         0.000   -1.000     0.000   1.000
+lfh.O3        lfh.C2        lfh.N4        lfh.H20         2.450   -2.000   180.000   1.000
+lfh.O3        lfh.C2        lfh.N4        lfh.H20         0.000    3.000     0.000   1.000
+lfh.C2        lfh.N4        lfh.C5        lfh.O6          0.000   -1.000     0.000   1.000
+lfh.C2        lfh.N4        lfh.C5        lfh.O6          3.625   -2.000   180.000   1.000
+lfh.C2        lfh.N4        lfh.C5        lfh.O6          0.000    3.000     0.000   1.000
+lfh.C2        lfh.N4        lfh.C5        lfh.C7          0.000   -1.000     0.000   1.000
+lfh.C2        lfh.N4        lfh.C5        lfh.C7          3.625   -2.000   180.000   1.000
+lfh.C2        lfh.N4        lfh.C5        lfh.C7          0.000    3.000     0.000   1.000
+lfh.H20       lfh.N4        lfh.C5        lfh.O6          0.000   -1.000     0.000   1.000
+lfh.H20       lfh.N4        lfh.C5        lfh.O6          3.625   -2.000   180.000   1.000
+lfh.H20       lfh.N4        lfh.C5        lfh.O6          0.000    3.000     0.000   1.000
+lfh.H20       lfh.N4        lfh.C5        lfh.C7          0.000   -1.000     0.000   1.000
+lfh.H20       lfh.N4        lfh.C5        lfh.C7          1.525   -2.000   180.000   1.000
+lfh.H20       lfh.N4        lfh.C5        lfh.C7          0.000    3.000     0.000   1.000
+lfh.N4        lfh.C5        lfh.C7        lfh.N8          0.000   -1.000     0.000   1.000
+lfh.N4        lfh.C5        lfh.C7        lfh.N8          7.000   -2.000   180.000   1.000
+lfh.N4        lfh.C5        lfh.C7        lfh.N8          0.000    3.000     0.000   1.000
+lfh.N4        lfh.C5        lfh.C7        lfh.C18         0.000   -1.000     0.000   1.000
+lfh.N4        lfh.C5        lfh.C7        lfh.C18         7.000   -2.000   180.000   1.000
+lfh.N4        lfh.C5        lfh.C7        lfh.C18         0.000    3.000     0.000   1.000
+lfh.O6        lfh.C5        lfh.C7        lfh.N8          0.000   -1.000     0.000   1.000
+lfh.O6        lfh.C5        lfh.C7        lfh.N8          7.000   -2.000   180.000   1.000
+lfh.O6        lfh.C5        lfh.C7        lfh.N8          0.000    3.000     0.000   1.000
+lfh.O6        lfh.C5        lfh.C7        lfh.C18         0.000   -1.000     0.000   1.000
+lfh.O6        lfh.C5        lfh.C7        lfh.C18         7.000   -2.000   180.000   1.000
+lfh.O6        lfh.C5        lfh.C7        lfh.C18         0.000    3.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.N8        lfh.C9         -3.791   -1.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.N8        lfh.C9          1.715   -2.000   180.000   1.000
+lfh.C5        lfh.C7        lfh.N8        lfh.C9          1.599    3.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.N8        lfh.H32         0.000   -1.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.N8        lfh.H32         1.015   -2.000   180.000   1.000
+lfh.C5        lfh.C7        lfh.N8        lfh.H32         0.000    3.000     0.000   1.000
+lfh.C18       lfh.C7        lfh.N8        lfh.C9         -3.791   -1.000     0.000   1.000
+lfh.C18       lfh.C7        lfh.N8        lfh.C9          1.715   -2.000   180.000   1.000
+lfh.C18       lfh.C7        lfh.N8        lfh.C9          1.599    3.000     0.000   1.000
+lfh.C18       lfh.C7        lfh.N8        lfh.H32         0.000   -1.000     0.000   1.000
+lfh.C18       lfh.C7        lfh.N8        lfh.H32         1.015   -2.000   180.000   1.000
+lfh.C18       lfh.C7        lfh.N8        lfh.H32         0.000    3.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.C18       lfh.N1          0.000   -1.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.C18       lfh.N1          7.000   -2.000   180.000   1.000
+lfh.C5        lfh.C7        lfh.C18       lfh.N1          0.000    3.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.C18       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.C5        lfh.C7        lfh.C18       lfh.N17         7.000   -2.000   180.000   1.000
+lfh.C5        lfh.C7        lfh.C18       lfh.N17         0.000    3.000     0.000   1.000
+lfh.N8        lfh.C7        lfh.C18       lfh.N1          0.000   -1.000     0.000   1.000
+lfh.N8        lfh.C7        lfh.C18       lfh.N1          7.000   -2.000   180.000   1.000
+lfh.N8        lfh.C7        lfh.C18       lfh.N1          0.000    3.000     0.000   1.000
+lfh.N8        lfh.C7        lfh.C18       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.N8        lfh.C7        lfh.C18       lfh.N17         7.000   -2.000   180.000   1.000
+lfh.N8        lfh.C7        lfh.C18       lfh.N17         0.000    3.000     0.000   1.000
+lfh.C7        lfh.N8        lfh.C9        lfh.C10        -3.791   -1.000     0.000   1.000
+lfh.C7        lfh.N8        lfh.C9        lfh.C10         1.715   -2.000   180.000   1.000
+lfh.C7        lfh.N8        lfh.C9        lfh.C10         1.599    3.000     0.000   1.000
+lfh.C7        lfh.N8        lfh.C9        lfh.C16        -3.791   -1.000     0.000   1.000
+lfh.C7        lfh.N8        lfh.C9        lfh.C16         1.715   -2.000   180.000   1.000
+lfh.C7        lfh.N8        lfh.C9        lfh.C16         1.599    3.000     0.000   1.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C10         0.000   -1.000     0.000   1.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C10         1.015   -2.000   180.000   1.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C10         0.000    3.000     0.000   1.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C16         0.000   -1.000     0.000   1.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C16         1.015   -2.000   180.000   1.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C16         0.000    3.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C10       lfh.C11         0.000   -1.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C10       lfh.C11         3.625   -2.000   180.000   1.000
+lfh.N8        lfh.C9        lfh.C10       lfh.C11         0.000    3.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C10       lfh.H21         0.000   -1.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C10       lfh.H21         3.625   -2.000   180.000   1.000
+lfh.N8        lfh.C9        lfh.C10       lfh.H21         0.000    3.000     0.000   1.000
+lfh.C16       lfh.C9        lfh.C10       lfh.C11         0.000   -1.000     0.000   1.000
+lfh.C16       lfh.C9        lfh.C10       lfh.C11         3.625   -2.000   180.000   1.000
+lfh.C16       lfh.C9        lfh.C10       lfh.C11         0.000    3.000     0.000   1.000
+lfh.C16       lfh.C9        lfh.C10       lfh.H21         0.000   -1.000     0.000   1.000
+lfh.C16       lfh.C9        lfh.C10       lfh.H21         3.625   -2.000   180.000   1.000
+lfh.C16       lfh.C9        lfh.C10       lfh.H21         0.000    3.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C16       lfh.C15         0.000   -1.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C16       lfh.C15         3.625   -2.000   180.000   1.000
+lfh.N8        lfh.C9        lfh.C16       lfh.C15         0.000    3.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C16       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.N8        lfh.C9        lfh.C16       lfh.N17         3.625   -2.000   180.000   1.000
+lfh.N8        lfh.C9        lfh.C16       lfh.N17         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C9        lfh.C16       lfh.C15         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C9        lfh.C16       lfh.C15         3.625   -2.000   180.000   1.000
+lfh.C10       lfh.C9        lfh.C16       lfh.C15         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C9        lfh.C16       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C9        lfh.C16       lfh.N17         0.839   -2.000   180.000   1.000
+lfh.C10       lfh.C9        lfh.C16       lfh.N17         0.000    3.000     0.000   1.000
+lfh.C9        lfh.C10       lfh.C11       lfh.C12         0.000   -1.000     0.000   1.000
+lfh.C9        lfh.C10       lfh.C11       lfh.C12         3.625   -2.000   180.000   1.000
+lfh.C9        lfh.C10       lfh.C11       lfh.C12         0.000    3.000     0.000   1.000
+lfh.C9        lfh.C10       lfh.C11       lfh.C13         0.000   -1.000     0.000   1.000
+lfh.C9        lfh.C10       lfh.C11       lfh.C13         3.625   -2.000   180.000   1.000
+lfh.C9        lfh.C10       lfh.C11       lfh.C13         0.000    3.000     0.000   1.000
+lfh.H21       lfh.C10       lfh.C11       lfh.C12         0.000   -1.000     0.000   1.000
+lfh.H21       lfh.C10       lfh.C11       lfh.C12         3.625   -2.000   180.000   1.000
+lfh.H21       lfh.C10       lfh.C11       lfh.C12         0.000    3.000     0.000   1.000
+lfh.H21       lfh.C10       lfh.C11       lfh.C13         0.000   -1.000     0.000   1.000
+lfh.H21       lfh.C10       lfh.C11       lfh.C13         3.625   -2.000   180.000   1.000
+lfh.H21       lfh.C10       lfh.C11       lfh.C13         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H22         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H22         0.000   -2.000   180.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H22         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H23         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H23         0.000   -2.000   180.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H23         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H24         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H24         0.000   -2.000   180.000   1.000
+lfh.C10       lfh.C11       lfh.C12       lfh.H24         0.000    3.000     0.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H22         0.000   -1.000     0.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H22         0.000   -2.000   180.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H22         0.000    3.000     0.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H23         0.000   -1.000     0.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H23         0.000   -2.000   180.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H23         0.000    3.000     0.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H24         0.000   -1.000     0.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H24         0.000   -2.000   180.000   1.000
+lfh.C13       lfh.C11       lfh.C12       lfh.H24         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C13       lfh.C14         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C13       lfh.C14         3.625   -2.000   180.000   1.000
+lfh.C10       lfh.C11       lfh.C13       lfh.C14         0.000    3.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C13       lfh.C15         0.000   -1.000     0.000   1.000
+lfh.C10       lfh.C11       lfh.C13       lfh.C15         3.625   -2.000   180.000   1.000
+lfh.C10       lfh.C11       lfh.C13       lfh.C15         0.000    3.000     0.000   1.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C14         0.000   -1.000     0.000   1.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C14         3.625   -2.000   180.000   1.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C14         0.000    3.000     0.000   1.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C15         0.000   -1.000     0.000   1.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C15         3.625   -2.000   180.000   1.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C15         0.000    3.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H25         0.000   -1.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H25         0.000   -2.000   180.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H25         0.000    3.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H26         0.000   -1.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H26         0.000   -2.000   180.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H26         0.000    3.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H30         0.000   -1.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H30         0.000   -2.000   180.000   1.000
+lfh.C11       lfh.C13       lfh.C14       lfh.H30         0.000    3.000     0.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H25         0.000   -1.000     0.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H25         0.000   -2.000   180.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H25         0.000    3.000     0.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H26         0.000   -1.000     0.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H26         0.000   -2.000   180.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H26         0.000    3.000     0.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H30         0.000   -1.000     0.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H30         0.000   -2.000   180.000   1.000
+lfh.C15       lfh.C13       lfh.C14       lfh.H30         0.000    3.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C15       lfh.C16         0.000   -1.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C15       lfh.C16         3.625   -2.000   180.000   1.000
+lfh.C11       lfh.C13       lfh.C15       lfh.C16         0.000    3.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C15       lfh.H27         0.000   -1.000     0.000   1.000
+lfh.C11       lfh.C13       lfh.C15       lfh.H27         3.625   -2.000   180.000   1.000
+lfh.C11       lfh.C13       lfh.C15       lfh.H27         0.000    3.000     0.000   1.000
+lfh.C14       lfh.C13       lfh.C15       lfh.C16         0.000   -1.000     0.000   1.000
+lfh.C14       lfh.C13       lfh.C15       lfh.C16         3.625   -2.000   180.000   1.000
+lfh.C14       lfh.C13       lfh.C15       lfh.C16         0.000    3.000     0.000   1.000
+lfh.C14       lfh.C13       lfh.C15       lfh.H27         0.000   -1.000     0.000   1.000
+lfh.C14       lfh.C13       lfh.C15       lfh.H27         3.625   -2.000   180.000   1.000
+lfh.C14       lfh.C13       lfh.C15       lfh.H27         0.000    3.000     0.000   1.000
+lfh.C13       lfh.C15       lfh.C16       lfh.C9          0.000   -1.000     0.000   1.000
+lfh.C13       lfh.C15       lfh.C16       lfh.C9          3.625   -2.000   180.000   1.000
+lfh.C13       lfh.C15       lfh.C16       lfh.C9          0.000    3.000     0.000   1.000
+lfh.C13       lfh.C15       lfh.C16       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.C13       lfh.C15       lfh.C16       lfh.N17         0.839   -2.000   180.000   1.000
+lfh.C13       lfh.C15       lfh.C16       lfh.N17         0.000    3.000     0.000   1.000
+lfh.H27       lfh.C15       lfh.C16       lfh.C9          0.000   -1.000     0.000   1.000
+lfh.H27       lfh.C15       lfh.C16       lfh.C9          3.625   -2.000   180.000   1.000
+lfh.H27       lfh.C15       lfh.C16       lfh.C9          0.000    3.000     0.000   1.000
+lfh.H27       lfh.C15       lfh.C16       lfh.N17         0.000   -1.000     0.000   1.000
+lfh.H27       lfh.C15       lfh.C16       lfh.N17         3.625   -2.000   180.000   1.000
+lfh.H27       lfh.C15       lfh.C16       lfh.N17         0.000    3.000     0.000   1.000
+lfh.C9        lfh.C16       lfh.N17       lfh.C18         0.000   -1.000     0.000   1.000
+lfh.C9        lfh.C16       lfh.N17       lfh.C18         1.050   -2.000   180.000   1.000
+lfh.C9        lfh.C16       lfh.N17       lfh.C18         0.000    3.000     0.000   1.000
+lfh.C9        lfh.C16       lfh.N17       lfh.C19         0.000   -1.000     0.000   1.000
+lfh.C9        lfh.C16       lfh.N17       lfh.C19         1.050   -2.000   180.000   1.000
+lfh.C9        lfh.C16       lfh.N17       lfh.C19         0.000    3.000     0.000   1.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C18         0.000   -1.000     0.000   1.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C18         1.050   -2.000   180.000   1.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C18         0.000    3.000     0.000   1.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C19         0.000   -1.000     0.000   1.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C19         1.050   -2.000   180.000   1.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C19         0.000    3.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C18       lfh.N1          0.000   -1.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C18       lfh.N1          3.968   -2.000   180.000   1.000
+lfh.C16       lfh.N17       lfh.C18       lfh.N1          0.000    3.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C18       lfh.C7          0.000   -1.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C18       lfh.C7          3.625   -2.000   180.000   1.000
+lfh.C16       lfh.N17       lfh.C18       lfh.C7          0.000    3.000     0.000   1.000
+lfh.C19       lfh.N17       lfh.C18       lfh.N1          0.000   -1.000     0.000   1.000
+lfh.C19       lfh.N17       lfh.C18       lfh.N1          3.968   -2.000   180.000   1.000
+lfh.C19       lfh.N17       lfh.C18       lfh.N1          0.000    3.000     0.000   1.000
+lfh.C19       lfh.N17       lfh.C18       lfh.C7          0.000   -1.000     0.000   1.000
+lfh.C19       lfh.N17       lfh.C18       lfh.C7          3.625   -2.000   180.000   1.000
+lfh.C19       lfh.N17       lfh.C18       lfh.C7          0.000    3.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H28         0.000   -1.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H28         0.000   -2.000   180.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H28         0.089    3.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H29         0.000   -1.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H29         0.000   -2.000   180.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H29         0.089    3.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H31         0.000   -1.000     0.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H31         0.000   -2.000   180.000   1.000
+lfh.C16       lfh.N17       lfh.C19       lfh.H31         0.089    3.000     0.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H28         0.000   -1.000     0.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H28         0.000   -2.000   180.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H28         0.089    3.000     0.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H29         0.000   -1.000     0.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H29         0.000   -2.000   180.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H29         0.089    3.000     0.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H31         0.000   -1.000     0.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H31         0.000   -2.000   180.000   1.000
+lfh.C18       lfh.N17       lfh.C19       lfh.H31         0.089    3.000     0.000   1.000
+
+! lfh. improper parameter-------------------------------------------------------------------------------
+[impropers]
+lfh.N1        lfh.C2        lfh.N4        lfh.O3         10.500   180.000
+lfh.H20       lfh.N4        lfh.C2        lfh.C5          1.000   180.000
+lfh.N4        lfh.C5        lfh.O6        lfh.C7          1.100   180.000
+lfh.N8        lfh.C7        lfh.C18       lfh.C5          1.100   180.000
+lfh.H32       lfh.N8        lfh.C9        lfh.C7          1.000   180.000
+lfh.C10       lfh.C9        lfh.C16       lfh.N8          1.100   180.000
+lfh.C11       lfh.C10       lfh.H21       lfh.C9          1.100   180.000
+lfh.C12       lfh.C11       lfh.C13       lfh.C10         1.100   180.000
+lfh.C14       lfh.C13       lfh.C15       lfh.C11         1.100   180.000
+lfh.C16       lfh.C15       lfh.H27       lfh.C13         1.100   180.000
+lfh.C15       lfh.C16       lfh.N17       lfh.C9          1.100   180.000
+lfh.C19       lfh.N17       lfh.C18       lfh.C16         1.000   180.000
+lfh.C7        lfh.C18       lfh.N17       lfh.N1         10.500   180.000
