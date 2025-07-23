@@ -1,0 +1,10 @@
+readlib  Qoplsaa_HUGO.lib
+readlib  CHG.lib
+readlib  lfn.final.lib
+readprm  all.prm
+readpdb  chg_lfn.pdb
+boundary sphere 2:N8 30
+maketop  gas_chg.top
+writetop gas_chg.top
+writepdb chg_gas_start.pdb y
+quit

@@ -1,0 +1,11 @@
+readlib  Qoplsaa_HUGO.lib
+readlib  CHG.lib
+readlib  fac.lib
+readprm  all.prm
+readpdb  mao_chg_tana_2.pdb
+boundary sphere 395:N41 30
+solvate  395:N41 30 1 HOH
+maketop  mao_chg.top
+writetop mao_chg.top
+writepdb mao_chg_start.pdb y
+quit

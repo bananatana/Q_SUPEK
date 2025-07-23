@@ -1,0 +1,11 @@
+readlib  Qoplsaa_HUGO.lib
+readlib  CHG.lib
+readlib  lfn.final.lib
+readprm  all.prm
+readpdb  chg_lfn.pdb
+boundary sphere 2:N8 30
+solvate 2:N8 30 1 HOH
+maketop  wat_chg.top
+writetop wat_chg.top
+writepdb chg_wat_start.pdb y
+quit
