@@ -1,0 +1,51 @@
+#########################################################
+# Template for the pre-FEP equilibration input for Q. 
+# - Use with q_genfeps.py.
+# - Don't touch the placeholders - {top},{fep},...
+#   (except 'restraint', or for some weird reason the 'random_seed')
+#
+[MD]
+steps                 100000 ! play only with this
+stepsize                   1
+temperature              300
+bath_coupling            100
+separate_scaling          on
+random_seed              457
+initial_temperature      300
+lrf                       on
+
+[cut-offs]
+q_atom                    99
+solute_solute             10 
+solvent_solvent           10 
+solute_solvent            10
+
+[intervals]
+non_bond                  30
+output                  1000
+trajectory              1000
+energy                   100
+
+[files]
+topology        gas_chg.top
+#restart         chg_gas_start.pdb
+final           eq.re
+trajectory      eq.dcd
+energy          eq.en
+fep             water_gp.fep
+#restraint      init.re.rest    # {rest_relax}
+
+[sequence_restraints]
+ 48 51 50.0 0 0 ! Upper part of FAD
+ 52 63 0.5 0 0  ! FAD H-atoms
+ 3 5 50.0 0 0   ! Upper part CHG
+ 18 32 0.5 0 0  ! CHG H-atoms
+
+
+[distance_restraints]
+# donor-acceptor N8-C8
+ 14 40 1.0 8.0 1.00 0 ! C10 - N8 (reactive ones)
+
+[lambdas]
+1.000   0.000
+
