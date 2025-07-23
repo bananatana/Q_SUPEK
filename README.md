@@ -40,7 +40,7 @@ In the case of MAO A inhibition by CHG, the proposed mechanism involves a hydrid
 In the gas and water phase models, the full FAD cofactor is replaced with lumiflavin (LFN) to simplify the system while retaining the essential reactive moiety.
 
 ### System preparation - topology
---
+
 The first step involves generating the system topology and preparing the initial simulation setup, including solvation and definition of the spherical region (if applicable).
 
 Start with a `.pdb` file that contains the appropriate reactants:
