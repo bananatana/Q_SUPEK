@@ -1,1 +1,1 @@
-Examples of files for creating `.fep` files.
+Equilibration files - example. 
