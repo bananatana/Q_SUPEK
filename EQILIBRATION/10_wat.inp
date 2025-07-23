@@ -1,0 +1,34 @@
+[MD]
+steps                   1000000
+stepsize                1
+temperature             300
+bath_coupling           100
+separate_scaling        on
+lrf                     on
+
+[cut-offs]
+q_atom                    99
+
+[intervals]
+non_bond                 30
+output                   10000
+trajectory		 10000
+
+[lambdas]
+1.0 0.0
+
+[files]
+restart		09.re
+topology        wat_chg.top
+final           10.re
+trajectory	10.dcd
+fep             water_gp.fep
+
+[sequence_restraints]
+ 48 51 50.0 0 0 ! Upper part of FAD
+ 52 63 0.5 0 0  ! FAD H-atoms
+ 3 5 50.0 0 0   ! Upper part CHG
+ 18 32 0.5 0 0  ! CHG H-atoms
+
+[distance_restraints]
+ 14 40 1.0 3.5 20.00 0 ! C10 - N8 (reactive ones)

@@ -1,0 +1,29 @@
+[MD]
+steps                   30000
+stepsize                1
+temperature             150
+bath_coupling           100
+separate_scaling        on
+lrf                     on
+
+[cut-offs]
+q_atom                    99
+
+[intervals]
+non_bond                 30
+output                   1000
+trajectory		 100
+
+[lambdas]
+1.0 0.0
+
+[files]
+restart         06.re
+topology        wat_chg.top
+final           07.re
+trajectory	07.dcd
+fep             water_gp.fep
+
+[sequence_restraints]
+# all
+1    63        2     1   0
