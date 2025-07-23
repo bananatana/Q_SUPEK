@@ -203,3 +203,16 @@ This script will copy `q_run_feps.sh` into each replica folder and execute it au
 ### Calibration - referent reaction
 
 ### Analysis
+
+**Vizualization:**
+When it comes to visualization, I always emphasize — and will continue to emphasize — the importance of checking trajectories visually. A quick inspection to ensure that everything is in place and all components of the system are present can save months of wasted effort.
+
+The `.dcd` files can simply be loaded on top of the initial `.pdb` file in your preferred visualization tool (e.g., PyMOL or VMD). For equilibration runs, loading all trajectories is usually manageable, but for FEP phase analysis, this can become problematic.
+
+To address this, I created a small VMD script, `concat_dcds.tcl`, which merges all FEP trajectories into a single file, `all.dcd`. The script can be executed with:
+
+```
+vmd -dispdev text -e concat_dcds.tcl
+```
+
+Before running it, make sure to set the correct paths within the script and ensure that VMD is included in your system’s PATH.
