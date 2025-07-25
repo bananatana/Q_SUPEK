@@ -233,9 +233,20 @@ This will give you the ΔG‡ and ΔGr values for your non-reference reaction, a
 > ⚠️Important: You can check the input options for any qtools script at any time by running:
 `q_example.py -h`
 
-**Visualization of reaction digrams**
+**Visualization of reaction diagrams**
 
+We need reaction profiles to assess convergence, check whether the restraints were over-applied, and evaluate other aspects of the simulation. To generate these profiles, first run:
+
+```
 q_analysefeps.py
+```
+
+This will produce a `.log` file and a `.json` file, which we will use to plot the reaction profiles. Run: 
+
+```
+q_plot.py example.json
+```
+
 
 **Vizualization of FEP trajectories**
 When it comes to visualization, I always emphasize — and will continue to emphasize — the importance of checking trajectories visually. A quick inspection to ensure that everything is in place and all components of the system are present can save months of wasted effort.
