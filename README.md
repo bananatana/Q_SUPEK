@@ -204,7 +204,7 @@ This script will copy `q_run_feps.sh` into each replica folder and execute it au
 
 In these simulations, our focus is on examining how the environment affects the reference reaction. We already know the mechanism of this reference reaction, as well as its parameters—ΔG‡ and ΔGr. These reference values may come from experimental data or from other computational approaches (such as a QM model reaction or QM/MM calculations). I won’t go into detail here on how to determine these parameters, but you will need to have them in place for the subsequent steps.
 
-In the first step, we will map the reference reaction using q_automapper.py (part of qtools, please run q_automapper.py -h to see options). In my case, this is mapped to the gas-phase reference reaction. This step allows us to obtain the parameters Hij and α, which will be used to determine ΔG‡ and ΔGr in different environments (such as water or an enzyme, in my case).
+In the first step, we will map the reference reaction using `q_automapper.py` (part of qtools). In my case, this is mapped to the gas-phase reference reaction. This step allows us to obtain the parameters Hij and α, which will be used to determine ΔG‡ and ΔGr in different environments (such as water or an enzyme, in my case).
 
 Navigate to the desired folder and run something like following command:
 
@@ -215,15 +215,25 @@ Navigate to the desired folder and run something like following command:
 Of course, this is just my example, where ΔG‡ = 38.81 and ΔGr = 34.99. The values 0 and 0 are the initial guesses for Hij and α, and nt denotes the number of threads. If the calculation does not converge, you can experiment with the options—be creative!
 Here’s a refined version of your text:
 
-q_mapper will generate the next command, which you will then apply to your non-reference reactions.
+`q_automapper.py` will generate the next command, which you will then apply to your non-reference reactions.
 
 I would strongly recommend that, before proceeding with this step, you take the time to read the relevant literature to understand the meaning and significance of these parameters. A good starting point is this [article](https://doi.org/10.1039/B907354J.).
 
 ### Analysis & non-reference reactions 
 
-** **
+**Non-reference reactions - ΔG‡ and ΔGr calculation**
 
-**Vizualization:**
+Go to the desired folder and run the command provided earlier by `q_automapper.py`, something like: 
+
+```
+q_mapper.py 61.4580528682 109.898661623 --bins 50 --skip 100 --min 10 --temp 300.0
+```
+This will give you the ΔG‡ and ΔGr values for your non-reference reaction, along with statistical data based on the number of replicates you used. Make sure to verify that the results are reasonable (for example, a standard deviation larger than the reaction barrier would not make sense). Also, critically assess whether the obtained ΔG‡ and ΔGr values are consistent with the context of your research.
+
+**Visualization of reaction digrams**
+
+
+**Vizualization of FEP trajectories**
 When it comes to visualization, I always emphasize — and will continue to emphasize — the importance of checking trajectories visually. A quick inspection to ensure that everything is in place and all components of the system are present can save months of wasted effort.
 
 The `.dcd` files can simply be loaded on top of the initial `.pdb` file in your preferred visualization tool (e.g., PyMOL or VMD). For equilibration runs, loading all trajectories is usually manageable, but for FEP phase analysis, this can become problematic.
