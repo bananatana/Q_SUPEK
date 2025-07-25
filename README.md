@@ -230,8 +230,12 @@ q_mapper.py 61.4580528682 109.898661623 --bins 50 --skip 100 --min 10 --temp 300
 ```
 This will give you the ΔG‡ and ΔGr values for your non-reference reaction, along with statistical data based on the number of replicates you used. Make sure to verify that the results are reasonable (for example, a standard deviation larger than the reaction barrier would not make sense). Also, critically assess whether the obtained ΔG‡ and ΔGr values are consistent with the context of your research.
 
+> ⚠️Important: You can check the input options for any qtools script at any time by running:
+`q_example.py -h`
+
 **Visualization of reaction digrams**
 
+q_analysefeps.py
 
 **Vizualization of FEP trajectories**
 When it comes to visualization, I always emphasize — and will continue to emphasize — the importance of checking trajectories visually. A quick inspection to ensure that everything is in place and all components of the system are present can save months of wasted effort.
