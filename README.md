@@ -200,9 +200,28 @@ bash run_all.sh
 
 This script will copy `q_run_feps.sh` into each replica folder and execute it automatically.
 
-### Calibration - referent reaction
+### Calibration - reference reaction
 
-### Analysis
+In these simulations, our focus is on examining how the environment affects the reference reaction. We already know the mechanism of this reference reaction, as well as its parameters—ΔG‡ and ΔGr. These reference values may come from experimental data or from other computational approaches (such as a QM model reaction or QM/MM calculations). I won’t go into detail here on how to determine these parameters, but you will need to have them in place for the subsequent steps.
+
+In the first step, we will map the reference reaction using q_automapper.py (part of qtools, please run q_automapper.py -h to see options). In my case, this is mapped to the gas-phase reference reaction. This step allows us to obtain the parameters Hij and α, which will be used to determine ΔG‡ and ΔGr in different environments (such as water or an enzyme, in my case).
+
+Navigate to the desired folder and run something like following command:
+
+```
+ q_automapper.py 38.81 34.99 0 0 --nt 1
+```
+
+Of course, this is just my example, where ΔG‡ = 38.81 and ΔGr = 34.99. The values 0 and 0 are the initial guesses for Hij and α, and nt denotes the number of threads. If the calculation does not converge, you can experiment with the options—be creative!
+Here’s a refined version of your text:
+
+q_mapper will generate the next command, which you will then apply to your non-reference reactions.
+
+I would strongly recommend that, before proceeding with this step, you take the time to read the relevant literature to understand the meaning and significance of these parameters. A good starting point is this [article](https://doi.org/10.1039/B907354J.).
+
+### Analysis & non-reference reactions 
+
+** **
 
 **Vizualization:**
 When it comes to visualization, I always emphasize — and will continue to emphasize — the importance of checking trajectories visually. A quick inspection to ensure that everything is in place and all components of the system are present can save months of wasted effort.
