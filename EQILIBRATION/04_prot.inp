@@ -1,0 +1,32 @@
+[MD]
+steps                   50000
+stepsize                1
+temperature             200
+bath_coupling           100
+separate_scaling        on
+lrf                     on
+
+[cut-offs]
+q_atom                    99
+solute_solute             10
+solvent_solvent           10
+solute_solvent            10
+
+[intervals]
+non_bond                 30
+output                   1000
+trajectory		 100
+
+[lambdas]
+1.0 0.0
+
+[files]
+restart		03.re
+topology        mao_chg.top
+final           04.re
+trajectory	04.dcd
+fep             mao_chg.fep
+
+[sequence_restraints]
+# all
+1    8312       200   0   0

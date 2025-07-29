@@ -1,0 +1,46 @@
+[MD]
+steps                   100000
+stepsize                1
+temperature             300
+bath_coupling           100
+separate_scaling        on
+lrf                     on
+
+[cut-offs]
+q_atom                    99
+solute_solute             10
+solvent_solvent           10
+solute_solvent            10
+
+[intervals]
+non_bond                 30
+output                   1000
+trajectory		 100
+
+[lambdas]
+1.0 0.0
+
+[files]
+restart		08.re
+topology        mao_chg.top
+final           09.re
+trajectory	09.dcd
+fep             mao_chg.fep
+
+[sequence_restraints]
+# put your restraints here
+# FAC Q
+6352 6362        0.5   0   0
+6364 6364	 0.5   0   0
+6366 6369	 0.5   0   0
+6399 6400	 0.5   0   0
+6406 6406	 0.5   0   0
+# CHG (all Q)
+8281 8312        0.5   0   0
+
+[distance_restraints]
+# donor-acceptor N5-Calpha (novo!)
+6359 8294  3.0 3.0 10.0 0
+# N5-H 
+6359 8310  2.0 2.0 10.0 0
+
