@@ -95,7 +95,7 @@ app ligpargen -i CHG.pdb -r CHG -c 0 # Generates parameters for neutral CHG
 
 >**Charge Considerations**
 > - You may keep the partial charges assigned by LigParGen.
-> - For higher accuracy, charges can be recalculated using Gaussian16 (e.g., RESP method), and updated manually in the .prm file.
+> - For higher accuracy, charges can be recalculated using Gaussian16 (e.g., RESP method), and updated manually in the .lib file.
 > - If the ligand is treated as fully reactive (i.e., all atoms are Q-atoms), charge groups are not necessary.
 However, for passive ligands, charge groups must be defined in the .lib file. These are sets of adjacent atoms with an integer total charge.
 
