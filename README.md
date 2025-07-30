@@ -143,7 +143,7 @@ At this stage, we need a `.fep` file that specifies which atoms—and associated
 
 Here, we use [qtools](https://github.com/mpurg/qtools/tree/master). You can install in locally. Some computer architectures may not work well with this installation and instead require a Python 2 environment. This can be easily addressed by using a virtual environment with pyenv. For example, I had to set this up on macOS, but there should be no issues on Linux.
 
-In addition to the standard `.lib` and `.prm` files used for building the topology, corresponding `.lib` and `.prm` files are also required for the product molecules. In the repository, you can find an example illustrating the structure of a .qmap file and the resulting .fep file, though these will naturally vary depending on the specific case.
+In addition to the standard `.lib` and `.prm` files used for building the topology, corresponding `.lib` and `.prm` files are also required for the product molecules. In the repository, you can find an example illustrating the structure of a `.qmap` file and the resulting `.fep` file, though these will naturally vary depending on the specific case.
 
 Locally, where **qtools** are installed, we run the following command:
 
