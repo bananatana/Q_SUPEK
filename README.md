@@ -1,5 +1,5 @@
 # Q_SUPEK 
-Instructions (idiot proof, I hope!) for using Q6 and related tools on the [SUPEK cluster](https://www.srce.unizg.hr/napredno-racunanje). Here I will provide running scripts and examples. 
+Instructions for using Q6 and related tools on the [SUPEK cluster](https://www.srce.unizg.hr/napredno-racunanje). Here I will provide running scripts and examples. 
 
 **General informations:**
 
