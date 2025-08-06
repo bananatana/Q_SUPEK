@@ -217,7 +217,7 @@ Here’s a refined version of your text:
 
 `q_automapper.py` will generate the next command, which you will then apply to your non-reference reactions.
 
-I would strongly recommend that, before proceeding with this step, you take the time to read the relevant literature to understand the meaning and significance of these parameters. A good starting point is this [article](https://doi.org/10.1039/B907354J.).
+I would strongly recommend that, before proceeding with this step, you take the time to read the relevant literature to understand the meaning and significance of these parameters. A good starting point is this [article](https://doi.org/10.1039/B907354J).
 
 ### Analysis & non-reference reactions 
 
