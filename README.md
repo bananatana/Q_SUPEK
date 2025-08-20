@@ -246,7 +246,7 @@ This will produce a `.log` file and a `.json` file, which we will use to plot th
 ```
 q_plot.py example.json
 ```
-
+Because the previous script isn’t compatible with the Python 2 environment on my macOS due to its matplotlib dependencies (which I cannot install within it), I created a small Jupyter notebook `analyse_FEPs.ipynb`, that performs the same task. Feel free to use it and customize it as you like! :)
 
 **Vizualization of FEP trajectories**
 When it comes to visualization, I always emphasize — and will continue to emphasize — the importance of checking trajectories visually. A quick inspection to ensure that everything is in place and all components of the system are present can save months of wasted effort.
